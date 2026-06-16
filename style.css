@@ -1,0 +1,100 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  padding: 24px;
+}
+
+.container { max-width: 800px; margin: 0 auto; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2d3748;
+}
+
+h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; color: #4a5568; }
+
+.form-card, .table-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+input, select {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  flex: 1;
+  min-width: 140px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus { border-color: #6366f1; }
+
+button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #4f46e5; }
+
+.stats-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 28px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.stat-label { display: block; font-size: 0.85rem; color: #718096; margin-bottom: 8px; }
+
+.stat-value { display: block; font-size: 2.2rem; font-weight: 700; color: #6366f1; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #edf2f7; }
+
+th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #718096; }
+
+tr:last-child td { border-bottom: none; }
+
+tr:hover td { background: #f7fafc; }
+
+.delete-btn {
+  background: none;
+  color: #fc8181;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover { background: #fff5f5; color: #e53e3e; }
+
+#emptyMsg { color: #a0aec0; text-align: center; padding: 24px; display: none; }
