@@ -12,4 +12,4 @@ A web app to track CGPA and predict future grades based on upcoming courses.
 HTML · CSS · JavaScript
 
 ## Live Demo
-[View App](grade-tracker-git-main-shachisingh1983s-projects.vercel.app)
+[View App](https://grade-tracker-delta.vercel.app/)
