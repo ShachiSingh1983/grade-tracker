@@ -1,4 +1,6 @@
 // Load existing courses from localStorage, or start with empty array
+
+// localStorage.clear(); // Uncomment this line to clear all saved data
 let courses = JSON.parse(localStorage.getItem("courses")) || [];
 
 // Save courses to localStorage whenever we make changes
@@ -77,8 +79,8 @@ function renderTable() {
   emptyMsg.style.display = "none";
 
   const gradeLabels = {
-    10: "O", 9: "A+", 8: "A", 7: "B+", 6: "B", 5: "C", 4: "D", 0: "F"
-  };
+  10: "Ex", 9: "A", 8: "B", 7: "C", 6: "D", 5: "P", 0: "F"
+};
 
   courses.forEach((course, index) => {
     const row = document.createElement("tr");

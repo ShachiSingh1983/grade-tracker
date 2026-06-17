@@ -17,15 +17,14 @@
         <input type="text" id="courseName" placeholder="Course name (e.g. Signals & Systems)" />
         <input type="number" id="credits" placeholder="Credits (e.g. 3)" min="1" max="6" />
         <select id="grade">
-          <option value="">Select Grade</option>
-          <option value="10">O (10)</option>
-          <option value="9">A+ (9)</option>
-          <option value="8">A (8)</option>
-          <option value="7">B+ (7)</option>
-          <option value="6">B (6)</option>
-          <option value="5">C (5)</option>
-          <option value="4">D (4)</option>
-          <option value="0">F (0)</option>
+             <option value="">Select Grade</option>
+            <option value="10">Ex (10)</option>
+            <option value="9">A (9)</option>
+            <option value="8">B (8)</option>
+            <option value="7">C (7)</option>
+            <option value="6">D (6)</option>
+            <option value="5">P (5)</option>
+            <option value="0">F (0)</option>
         </select>
         <button onclick="addCourse()">Add Course</button>
       </div>
@@ -67,11 +66,11 @@
     <div class="form-card">
       <h2>CGPA Predictor</h2>
       <p>If I get grade <select id="futureGrade">
-        <option value="10">O (10)</option>
-        <option value="9">A+ (9)</option>
-        <option value="8">A (8)</option>
-        <option value="7">B+ (7)</option>
-        <option value="6">B (6)</option>
+        <option value="10">Ex (10)</option>
+        <option value="9">A (9)</option>
+        <option value="8">B (8)</option>
+        <option value="7">C (7)</option>
+        <option value="6">D (6)</option>
       </select> in <input type="number" id="futureCredits" placeholder="credits" min="1" max="30" style="width:80px" /> more credits,
       my CGPA will be: <strong id="predictedCgpa">—</strong></p>
       <button onclick="predict()">Calculate</button>
